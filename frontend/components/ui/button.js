@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Button = ({ children, className, ...props }) => (
   <button
-    className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded ${className}`}
+    className={`bg-white text-blue-500 font-bold py-2 px-4 rounded-3xl ${className}`}
     {...props}
   >
     {children}

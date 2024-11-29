@@ -1,21 +1,34 @@
 import React from 'react';
 import { Card, CardHeader, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import { HeartIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 const ProfileCard = () => {
   return (
     <Card className="flex w-screen h-screen">
       <div className="w-1/3 bg-blue-500 flex flex-col items-center justify-center">
-        <img src="/api/placeholder/300/300" alt="Profile" className="rounded-full w-32 h-32" />
-        <Button className="mt-4">Book session</Button>
+        <img src="/api/placeholder/300/300" alt="Swetlana Varma" className="rounded-full w-32 h-32" />
+        <Button className="mt-4 ">Book session</Button>
       </div>
-      <div className="w-2/3 p-6">
+      <div className="w-2/3 p-8">
         <CardHeader>
-          <h2 className="text-2xl font-bold">Swetlana Varnna</h2>
-          <p className="text-gray-500">Licensed Therapist</p>
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-bold">Swetlana Varma</h2>
+              <p className="text-gray-500">Licensed Therapist</p>
+            </div>
+            <div className="space-x-2">
+              <button className="p-2 rounded-full bg-blue-100 text-blue-500 hover:bg-blue-200">
+                <HeartIcon className="w-5 h-5" />
+              </button>
+              <button className="p-2 rounded-full bg-blue-100 text-blue-500 hover:bg-blue-200">
+                <PhoneIcon className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
         </CardHeader>
         <CardContent>
-          <div className="space-y-4">
+          <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium">About me</h3>
               <p>Hello, I'm Swetlana, a licensed therapist dedicated to guiding individuals through life's challenges with empathy and expertise. With over 10+ years of experience, I specialize in evidence-based practices to help clients achieve personal growth and wellness.</p>
