@@ -5,7 +5,6 @@ import {
   Share2, 
   MapPin ,
   ArrowLeft,
-  ArrowRight,
   GraduationCap,
   IdCard ,
   Users,
@@ -16,10 +15,9 @@ const ProfileCard = () => {
   return (
     <Card className="flex w-screen h-screen ">
       <div className="w-1/3 bg-blue-500 flex flex-col items-center justify-center relative">
-
       <button className="absolute top-7 left-7 text-white font-medium text-xl flex items-center space-x-2">
-  <ArrowLeft /> <span>Back</span>
-</button>
+      <ArrowLeft /> <span>Back</span>
+      </button>
 
         <div className="bg-white w-2/3 p-8 rounded-xl text-center flex flex-col items-center mb-6 relative">
           <div className="absolute top-4 right-4">
